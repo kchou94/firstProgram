@@ -29,7 +29,7 @@ func TestCountLines(t *testing.T) {
 func TestCountBytes(t *testing.T) {
 	b := bytes.NewBufferString("abcdefu!")
 	exp := 8
-    res := count(b, false, true)
+	res := count(b, false, true)
 	if res != exp {
 		t.Errorf("Expected %d, got %d instead.\n", exp, res)
 	}
